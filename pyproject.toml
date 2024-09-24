@@ -1,0 +1,27 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=67.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "page-tracker"
+version = "1.0.0"
+dependencies = [
+    "Flask",
+    "redis",
+]
+
+#Dependencias opcionais
+[project.optional-dependencies]
+#Grupos de dependencias
+dev = [
+    "pytest",
+    "pytest-timeout",
+    "requests",
+    "bandit",
+    "black",
+    "flake8",
+    "isort",
+    "pylint",
+]
